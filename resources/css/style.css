@@ -1,0 +1,56 @@
+body{
+    background-image: url(/public/media/blob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Variabili colori */
+:root{
+    --dark-blue: rgb(1, 1, 1);
+    --blue: rgb(0, 75, 101);
+    --light-blue: rgb(72, 166, 176);
+    --red: #ff5b4f;
+    --white: #fefeff;
+    --yellow: #ffbea3;
+    --pink: #b7594f;
+}
+
+.bg-b{
+    background-color: var(--blue);
+}
+
+.bg-light-b{
+    background-color: var(--light-blue);
+}
+
+.t-light-b{
+    color: var(--light-blue);
+}
+
+.t-b{
+    color: var(--blue);
+}
+
+/* Navbar */
+.navbar a, a:visited{
+    color: var(--white)!important;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: 1s;
+}
+
+.navbar a:hover{
+    border: 1px solid var(--white);
+    box-shadow: 3px 3px 4px var(--white);
+    color: var(--white);
+}
+
+.navbar a:active{
+    transform: scale(0.5);
+}
+
+
+
+
