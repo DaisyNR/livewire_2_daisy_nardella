@@ -9,6 +9,7 @@ use Livewire\Attributes\Validate;
 class CreateArticle extends Component
 {
     #[Validate('required', message: 'Please provide a post title')]
+    #[Validate('required|min:3')] 
     public $title = '';
  
     #[Validate('required|min:3')] 
