@@ -9,6 +9,7 @@ use Livewire\Attributes\Validate;
 class CreateArticle extends Component
 {
     #[Validate('required', message: 'Please provide a post title')]
+    #[Validate('min:3', message: 'Too short')]
     public $title = '';
  
     #[Validate('required|min:3')] 
@@ -28,7 +29,8 @@ class CreateArticle extends Component
         ]);
         
         $this->reset();
-        session()->flash('message','Article uploaded!');									
+        session()->flash('message','Article uploaded!');	
+        $this->redirect('/article/index');								
     }										           
     
     public function render()
